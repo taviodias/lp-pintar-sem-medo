@@ -1,9 +1,11 @@
-import HeroSection from "./components/Hero";
+import Benefits from "./components/Benefits";
+import Hero from "./components/Hero";
 
 export default function App() {
   return (
     <main>
-      <HeroSection />
+      <Hero />
+      <Benefits />
     </main>
   );
 }

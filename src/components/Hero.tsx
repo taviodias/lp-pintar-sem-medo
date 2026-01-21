@@ -1,7 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
-export default function HeroSection() {
+const pills = [
+  "✓ Para iniciantes absolutas",
+  "✓ Acesso online",
+  "✓ No seu ritmo",
+];
+
+export default function Hero() {
   const scrollToOffer = () => {
     document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -68,11 +74,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
             >
-              {[
-                "✓ Para iniciantes absolutas",
-                "✓ Acesso online",
-                "✓ No seu ritmo",
-              ].map((text, index) => (
+              {pills.map((text, index) => (
                 <motion.span
                   key={index}
                   className="bg-sage-light text-primary px-4 py-2 rounded-full text-sm font-medium"
