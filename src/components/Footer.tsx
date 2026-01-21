@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="text-center flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="gap-2 md:order-2">
-            <h3 className="font-display text-2xl font-semibold text-primary">
+            <h3 className="font-display text-2xl font-bold text-primary">
               Método Pintar Sem Medo
             </h3>
             <p className="text-muted-foreground text-sm">
