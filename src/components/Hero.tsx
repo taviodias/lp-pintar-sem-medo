@@ -7,7 +7,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="min-h-screen gradient-elegant flex items-center py-12 lg:py-0">
+    <section className="min-h-screen bg-linear-to-br from-cream to-blush flex items-center py-12 lg:py-0">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -27,7 +27,7 @@ export default function HeroSection() {
             </motion.span>
 
             <motion.h1
-              className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-primary leading-tight mb-6"
+              className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight mb-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.7 }}
