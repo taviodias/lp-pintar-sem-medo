@@ -59,7 +59,7 @@ export default function Benefits() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-primary mb-4">
-            Para Quem É Este Método?
+            Para quem é este Método?
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Para mulheres que desejam se reconectar com sua criatividade através
