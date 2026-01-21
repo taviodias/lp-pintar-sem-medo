@@ -82,7 +82,7 @@
     --sage-light: hsl(150 20% 85%);
     --terracotta: hsl(15 55% 55%);
     --forest-vals: 150 35% 25%;
-    --forest: hsl(--forest-vals);
+    --forest: hsl(var(--forest-vals));
     --gold: hsl(40 60% 50%);
 
     --sidebar-background: hsl(0 0% 98%);
