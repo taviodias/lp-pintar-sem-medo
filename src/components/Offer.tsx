@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { Check, Shield, Clock } from "lucide-react";
 import { motion } from "framer-motion";
+import HotmartPayment from "./HotmartPayment";
 
 const included = [
   "Acesso imediato e vitalício",
@@ -65,7 +65,7 @@ export default function Offer() {
             whileHover={{ boxShadow: "0 30px 60px -20px rgba(0,0,0,0.25)" }}
           >
             <motion.h3
-              className="font-display text-2xl font-bold text-primary mb-6"
+              className="font-display text-4xl font-bold text-primary mb-6"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -135,12 +135,9 @@ export default function Offer() {
               viewport={{ once: true }}
               transition={{ delay: 0.9 }}
             >
-              <Button
-                size="lg"
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-lg py-6 rounded-full shadow-elegant transition-all duration-300 hover:scale-105 mb-6"
-              >
+              <HotmartPayment className="mb-6 w-full">
                 Quero Comprar Agora
-              </Button>
+              </HotmartPayment>
             </motion.div>
 
             {/* Guarantee */}

@@ -49,7 +49,7 @@ const itemVariants = {
 
 export default function Benefits() {
   return (
-    <section className="py-20 bg-card">
+    <section className="py-20 bg-card" id="benefits">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
