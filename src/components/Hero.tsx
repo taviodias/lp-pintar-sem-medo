@@ -124,7 +124,7 @@ export default function Hero() {
                 }}
               />
               <motion.img
-                src="/image.png"
+                src="/lp-pintar-sem-medo/image.png"
                 alt="Potes de vidro pintados à mão com arte floral - Método Pintar Sem Medo"
                 className="relative w-full max-w-md lg:max-w-lg rounded-2xl shadow-elegant"
                 whileHover={{ scale: 1.02, rotate: 1 }}

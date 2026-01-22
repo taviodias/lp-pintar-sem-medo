@@ -34,7 +34,10 @@ export default function About() {
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <img src="/foto_milka.jpeg" alt="Foto Milka Dias" />
+                  <img
+                    src="/lp-pintar-sem-medo/foto_milka.jpeg"
+                    alt="Foto Milka Dias"
+                  />
                 </motion.div>
               </div>
             </motion.div>
