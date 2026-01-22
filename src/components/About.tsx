@@ -30,18 +30,11 @@ export default function About() {
                   }}
                 />
                 <motion.div
-                  className="relative w-64 h-64 mx-auto bg-sage-light rounded-full flex items-center justify-center border-4 border-background shadow-elegant"
+                  className="relative w-64 h-64 mx-auto bg-sage-light rounded-full flex items-center justify-center border-4 border-background shadow-elegant overflow-hidden"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="text-center px-4">
-                    <span className="font-display text-4xl font-semibold text-primary block">
-                      M
-                    </span>
-                    <span className="text-sm text-muted-foreground">
-                      Foto Milka
-                    </span>
-                  </div>
+                  <img src="/foto_milka.jpeg" alt="Foto Milka Dias" />
                 </motion.div>
               </div>
             </motion.div>
