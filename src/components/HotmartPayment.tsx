@@ -1,6 +1,7 @@
 import React, { useEffect, type ReactNode } from "react";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export default function HotmartPayment({
   children,
@@ -9,19 +10,16 @@ export default function HotmartPayment({
   children: ReactNode;
   className?: React.ComponentProps<"button">["className"];
 }) {
+  const isMobile = useIsMobile();
   useEffect(() => {
-    // This part might not be strictly necessary if Hotmart provides a single script file,
-    // but helps manage script loading if it is dynamic.
     const scriptId = "hotmart-script";
     if (!document.getElementById(scriptId)) {
-      // 1. Injetar o Script
       const script = document.createElement("script");
       script.src = "https://static.hotmart.com/checkout/widget.min.js";
       script.id = scriptId; // Adiciona ID para verificação
       script.async = true;
       document.head.appendChild(script);
 
-      // 2. Injetar o CSS
       const link = document.createElement("link");
       link.rel = "stylesheet";
       link.type = "text/css";
@@ -29,6 +27,12 @@ export default function HotmartPayment({
       document.head.appendChild(link);
     }
   }, []);
+
+  const buttonClick = (e: React.MouseEvent) => {
+    if (!isMobile) {
+      e.preventDefault();
+    }
+  };
 
   return (
     <Button
@@ -40,7 +44,7 @@ export default function HotmartPayment({
       )}
     >
       <a
-        onClick={(e) => e.preventDefault()}
+        onClick={buttonClick}
         href="https://pay.hotmart.com/N103746015V?checkoutMode=2"
         className="hotmart-fb"
       >
