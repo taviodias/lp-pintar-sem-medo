@@ -4,56 +4,62 @@ import { motion } from "framer-motion";
 const modules = [
   {
     number: "01",
-    title: "Introdução ao Método",
+    title: "Despertar Criativo",
     lessons: [
-      "Boas-vindas e mentalidade criativa",
-      "Como se preparar para a jornada",
-      "Liberando o medo de errar",
+      "Boas-vindas ao seu novo momento",
+      "O que te troxe até aqui?",
+      "O mito da criatividade",
+      "Seu diário criativo",
+      "Seu espaço sagrado",
     ],
   },
   {
     number: "02",
-    title: "Materiais e Preparação",
+    title: "Ferramentas da Transformação",
     lessons: [
-      "Lista completa de materiais",
-      "Como preparar o vidro para pintura",
-      "Escolhendo as tintas certas",
+      "Tintas × Vidros",
+      "Pinceis que fazem mágicas",
+      "Preparando o pote de vidro",
     ],
   },
   {
     number: "03",
-    title: "Técnicas Base",
+    title: "Cor e Emoção",
     lessons: [
-      "Pinceladas fundamentais",
-      "Criando fundos e texturas",
-      "Combinação de cores harmoniosas",
+      "Psicologia das cores",
+      "Montando sua paleta pessoal",
+      "Mistura sem medo",
+      "Cartela da alma",
     ],
   },
   {
     number: "04",
-    title: "Arte Floral",
+    title: "Primeiras Pinceladas",
     lessons: [
-      "Pintando folhas e ramos",
-      "Flores simples e elegantes",
-      "Composições florais completas",
+      "Linhas e Curvas",
+      "Folhas, Flores e Formas simples",
+      "Seu primeiro vidro",
     ],
   },
   {
     number: "05",
-    title: "Projetos Práticos",
+    title: "Pintura Criativa em Vidros",
     lessons: [
-      "Pote decorativo passo a passo",
-      "Garrafa ornamental",
-      "Conjunto harmonioso de peças",
+      "Preparação da base",
+      "Flores - 1, 2 e 3",
+      "Frutas - Maçã, Laranja e Limão",
+      "Animais Encantadores - Tucano e Gato",
+      "Arte Orgânica - 1, 2 e 3",
+      "Acabamentos",
     ],
   },
   {
     number: "06",
-    title: "Finalizações",
+    title: "Sua nova Identidade Criativa",
     lessons: [
-      "Técnicas de acabamento",
-      "Vernizes e proteção",
-      "Cuidados com suas peças",
+      "Espelho da transformação",
+      "Criar é existir",
+      "A mulher criativa que Eu me tornei",
     ],
   },
 ];
@@ -96,8 +102,7 @@ export default function Modules() {
             O que você vai aprender
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Um método completo, do zero ao avançado, para você criar peças
-            únicas e encantadoras.
+            Um método completo, para você criar peças únicas e encantadoras.
           </p>
         </motion.div>
 
