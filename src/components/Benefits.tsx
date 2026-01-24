@@ -17,7 +17,7 @@ const benefits = [
   {
     icon: Clock,
     title: "No Seu Ritmo",
-    description: "Acesso online por 2 anos. Assista quantas vezes precisar.",
+    description: "Acesso imediato por 2 anos. Assista quantas vezes precisar.",
   },
   {
     icon: Palette,
@@ -62,7 +62,7 @@ export default function Benefits() {
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Para mulheres que desejam se reconectar com sua criatividade através
-            da arte em vidros reutilizados.
+            da arte em vidros que seriam descartados.
           </p>
         </motion.div>
 
