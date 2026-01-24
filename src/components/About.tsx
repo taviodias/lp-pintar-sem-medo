@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
 
-const infos = [
-  { value: "Mais de 500", label: "Alunas transformadas" },
-  { value: "5+ anos", label: "De experiência" },
-];
+const infos = [{ value: "5+ anos", label: "De experiência" }];
 
 export default function About() {
   return (
@@ -76,13 +73,14 @@ export default function About() {
                 transition={{ delay: 0.5, duration: 0.6 }}
               >
                 <p>
-                  Sou artista, apaixonada por pintura e acredito profundamente
-                  no poder transformador da arte. Por anos, vi mulheres
-                  incríveis se afastarem de sua criatividade por medo de não
-                  serem "boas o suficiente".
+                  Sou artista criativa apaixonada por transformar o simples em
+                  algo especial e acredito profundamente no poder transformador
+                  da arte. Por anos, vi mulheres incríveis se afastarem de sua
+                  criatividade por medo de não serem "boas o suficiente".
                 </p>
                 <p>
-                  Foi por isso que criei o{" "}
+                  A pintura em vidro é, para mim, uma forma de expressão, pausa
+                  e reconexão. Foi por isso que criei o{" "}
                   <strong className="text-primary">
                     Método Pintar Sem Medo
                   </strong>
