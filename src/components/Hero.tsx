@@ -9,10 +9,6 @@ const pills = [
 ];
 
 export default function Hero() {
-  const scrollDown = () => {
-    document.getElementById("benefits")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section className="min-h-screen bg-linear-to-br from-cream to-blush flex items-center py-12 lg:py-0">
       <div className="container mx-auto px-4">
@@ -93,16 +89,8 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.6 }}
-              className="flex flex-col gap-4 md:flex-row justify-center lg:justify-start"
             >
               <HotmartPayment>Quero Começar Agora</HotmartPayment>
-              <Button
-                onClick={scrollDown}
-                size="lg"
-                className="bg-forest/50 hover:bg-forest/60 text-accent-foreground text-lg px-8 py-6 rounded-full shadow-elegant transition-all duration-300 hover:scale-105"
-              >
-                Quero Saber Mais
-              </Button>
             </motion.div>
           </motion.div>
 
