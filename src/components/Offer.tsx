@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import HotmartPayment from "./HotmartPayment";
 
 const included = [
-  "Acesso imediato e vitalício",
+  "Acesso imediato por 2 anos",
   "6 módulos completos em vídeo",
   "Aulas passo a passo detalhadas",
   "Lista de materiais recomendados",

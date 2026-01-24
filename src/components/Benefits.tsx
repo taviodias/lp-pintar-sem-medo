@@ -17,8 +17,7 @@ const benefits = [
   {
     icon: Clock,
     title: "No Seu Ritmo",
-    description:
-      "Acesso online e vitalício. Assista quando quiser, quantas vezes precisar.",
+    description: "Acesso online por 2 anos. Assista quantas vezes precisar.",
   },
   {
     icon: Palette,
