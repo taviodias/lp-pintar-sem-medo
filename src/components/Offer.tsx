@@ -7,7 +7,10 @@ const included = [
   "6 módulos completos em vídeo",
   "Aulas passo a passo detalhadas",
   "Lista de materiais recomendados",
-  "Suporte para dúvidas",
+  "Grupo de WhatsApp para alunas",
+  "Materiais de apoio com 100+ riscos para pintar",
+  "Aulas Bônus de pintura com tinta para vidros",
+  "Aula Bônus de pintura em pratos",
 ];
 
 const badges = [
