@@ -45,7 +45,6 @@ const modules = [
     number: "05",
     title: "Pintura Criativa em Vidros",
     lessons: [
-      "Preparação da base",
       "Flores - 1, 2 e 3",
       "Frutas - Maçã, Laranja e Limão",
       "Animais Encantadores - Tucano e Gato",
@@ -60,6 +59,15 @@ const modules = [
       "Espelho da transformação",
       "Criar é existir",
       "A mulher criativa que Eu me tornei",
+    ],
+  },
+  {
+    number: "07",
+    title: "Bônus",
+    lessons: [
+      "Aulas de pintura com tinta para vidros",
+      "Aula de pintura em pratos",
+      "Materiais de apoio",
     ],
   },
 ];
@@ -121,7 +129,7 @@ export default function Modules() {
                 y: -5,
                 boxShadow: "0 20px 40px -15px rgba(0,0,0,0.15)",
               }}
-              className="bg-card p-6 rounded-2xl border border-sage hover:shadow-elegant transition-all duration-300"
+              className={`bg-card p-6 rounded-2xl border border-sage hover:shadow-elegant transition-all duration-300 ${index === 6 && "lg:col-start-2"}`}
             >
               <div className="flex items-start gap-4 mb-4">
                 <motion.span
