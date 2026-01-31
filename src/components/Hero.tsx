@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import HotmartPayment from "./HotmartPayment";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const pills = [
   "✓ Para iniciantes absolutas",
@@ -8,13 +9,14 @@ const pills = [
 ];
 
 export default function Hero() {
+  const isMobile = useIsMobile();
   return (
     <section className="min-h-screen bg-linear-to-br from-cream to-blush flex items-center py-12 lg:py-0">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <motion.div
-            className="order-2 lg:order-1 text-center lg:text-left"
+            className="order-2 lg:order-1 text-center lg:text-left z-50"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -95,29 +97,79 @@ export default function Hero() {
 
           {/* Image */}
           <motion.div
-            className="order-1 lg:order-2 flex justify-center"
-            initial={{ opacity: 0, x: 50, scale: 0.9 }}
+            className="order-1 lg:order-2 flex justify-center relative"
+            initial={
+              isMobile
+                ? { opacity: 1, x: 0 }
+                : { opacity: 0.1, x: 50, scale: 0.9 }
+            }
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           >
-            <div className="relative">
-              <motion.div
-                className="absolute -inset-4 bg-sage-light/50 rounded-3xl blur-2xl"
-                animate={{ scale: [1, 1.05, 1] }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
+            <picture>
+              <source
+                srcSet="/lp-pintar-sem-medo/mobile-fundo.webp"
+                media="(max-width: 600px)"
+                type="image/webp"
+              />
+              <source
+                srcSet="/lp-pintar-sem-medo/fundo.webp"
+                type="image/webp"
               />
               <motion.img
-                src="/lp-pintar-sem-medo/image.png"
-                alt="Potes de vidro pintados à mão com arte floral - Método Pintar Sem Medo"
-                className="relative w-full max-w-md lg:max-w-lg rounded-2xl shadow-elegant"
-                whileHover={{ scale: 1.02, rotate: 1 }}
-                transition={{ duration: 0.3 }}
+                src="/lp-pintar-sem-medo/fundo.webp"
+                alt="Decoração floral de fundo"
+                className="absolute -top-16 xl:-top-40 right-0 z-0 pointer-events-none"
+                initial={
+                  isMobile
+                    ? { x: 0, opacity: 0.3 }
+                    : { x: 100, opacity: 0.1, rotate: 10 }
+                }
+                animate={{ x: 0, opacity: 0.3, rotate: 0 }}
+                transition={{
+                  duration: 1.2,
+                  ease: "easeOut",
+                }}
+                loading="eager"
+                decoding="sync"
+                fetchPriority="high"
               />
-            </div>
+            </picture>
+
+            <motion.div
+              className="relative z-10 flex justify-center"
+              initial={
+                isMobile ? { x: 0, opacity: 1 } : { x: 100, opacity: 0.1 }
+              }
+              animate={{ x: 0, opacity: 1 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+                delay: isMobile ? 0 : 0.8,
+              }}
+            >
+              <picture>
+                <source
+                  srcSet="/lp-pintar-sem-medo/mobile-potes.webp"
+                  media="(max-width: 600px)"
+                  type="image/webp"
+                />
+                <source
+                  srcSet="/lp-pintar-sem-medo/potes.webp"
+                  type="image/webp"
+                />
+                <motion.img
+                  src="/lp-pintar-sem-medo/potes.webp"
+                  alt="Potes de vidro pintados à mão"
+                  className="drop-shadow-2xl"
+                  whileHover={{ scale: 1.05, rotate: -1 }}
+                  transition={{ duration: 0.3 }}
+                  fetchPriority="high"
+                  loading="eager"
+                  decoding="sync"
+                />
+              </picture>
+            </motion.div>
           </motion.div>
         </div>
       </div>
