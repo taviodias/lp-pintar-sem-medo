@@ -8,7 +8,8 @@ const included = [
   "Aulas passo a passo detalhadas",
   "Lista de materiais recomendados",
   "Grupo de WhatsApp para alunas",
-  "Materiais de apoio com 100+ riscos para pintar",
+  "Materiais de apoio para avançar na sua criação",
+  "PDFs com mais de 100 riscos para pintura",
   "Aulas Bônus de pintura com tinta para vidros",
   "Aula Bônus de pintura em pratos",
 ];
