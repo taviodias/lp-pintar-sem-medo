@@ -108,16 +108,13 @@ export default function Hero() {
           >
             <picture>
               <source
-                srcSet="/lp-pintar-sem-medo/mobile-fundo.webp"
+                srcSet="/pintar-sem-medo/mobile-fundo.webp"
                 media="(max-width: 600px)"
                 type="image/webp"
               />
-              <source
-                srcSet="/lp-pintar-sem-medo/fundo.webp"
-                type="image/webp"
-              />
+              <source srcSet="/pintar-sem-medo/fundo.webp" type="image/webp" />
               <motion.img
-                src="/lp-pintar-sem-medo/fundo.webp"
+                src="/pintar-sem-medo/fundo.webp"
                 alt="Decoração floral de fundo"
                 className="absolute -top-16 xl:-top-40 right-0 z-0 pointer-events-none"
                 initial={
@@ -150,16 +147,16 @@ export default function Hero() {
             >
               <picture>
                 <source
-                  srcSet="/lp-pintar-sem-medo/mobile-potes.webp"
+                  srcSet="/pintar-sem-medo/mobile-potes.webp"
                   media="(max-width: 600px)"
                   type="image/webp"
                 />
                 <source
-                  srcSet="/lp-pintar-sem-medo/potes.webp"
+                  srcSet="/pintar-sem-medo/potes.webp"
                   type="image/webp"
                 />
                 <motion.img
-                  src="/lp-pintar-sem-medo/potes.webp"
+                  src="/pintar-sem-medo/potes.webp"
                   alt="Potes de vidro pintados à mão"
                   className="drop-shadow-2xl"
                   whileHover={{ scale: 1.05, rotate: -1 }}

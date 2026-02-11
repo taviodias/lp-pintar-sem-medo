@@ -32,7 +32,7 @@ export default function About() {
                   transition={{ duration: 0.3 }}
                 >
                   <img
-                    src="/lp-pintar-sem-medo/foto_milka.jpeg"
+                    src="/pintar-sem-medo/foto_milka.jpeg"
                     alt="Foto Milka Dias"
                   />
                 </motion.div>
