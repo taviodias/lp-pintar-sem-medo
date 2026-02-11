@@ -6,7 +6,7 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/lp-pintar-sem-medo/",
+  base: "/pintar-sem-medo/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
