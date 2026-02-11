@@ -39,6 +39,13 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: Organize subfolder for domain
+        run: |
+          mkdir staging
+          mv dist staging/pagina
+          echo '<meta http-equiv="refresh" content="0; URL=./pintar-sem-medo/">' > staging/index.html
+          rm -rf dist
+          mv staging dist
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
