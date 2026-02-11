@@ -42,7 +42,7 @@ jobs:
       - name: Organize subfolder for domain
         run: |
           mkdir staging
-          mv dist staging/pagina
+          mv dist staging/pintar-sem-medo
           echo '<meta http-equiv="refresh" content="0; URL=./pintar-sem-medo/">' > staging/index.html
           rm -rf dist
           mv staging dist
