@@ -43,6 +43,7 @@ jobs:
         run: |
           mkdir staging
           mv dist staging/pintar-sem-medo
+          echo "mdias.club" > staging/CNAME
           echo '<meta http-equiv="refresh" content="0; URL=./pintar-sem-medo/">' > staging/index.html
           rm -rf dist
           mv staging dist
